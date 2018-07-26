@@ -1,11 +1,17 @@
 import '../styles/style.scss'
-import BlogEntry from '../components/BlogEntry';
+
 import fetch from 'isomorphic-unfetch'
+
+import BlogEntry from '../components/BlogEntry';
+import Sidebar from '../components/Sidebar'
 
 const blog = (props) => {
     return(
         <div className='blog dark'>
-            <BlogEntry entry={props.stuff[2]}/>
+            <div className="blog-container">
+                <Sidebar />
+                <BlogEntry entry={props.stuff[2]}/>
+            </div>
         </div>  
     )
 } 
