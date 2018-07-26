@@ -150,10 +150,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch__ = __webpack_require__("isomorphic-unfetch");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch__);
 
-
-var _jsxFileName = '/Users/jeandiaz/Desktop/Development/personal-blog/pages/blog.js',
-    _this = this;
-
+var _jsxFileName = '/Users/jeandiaz/Desktop/Development/personal-blog/pages/blog.js';
 
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
@@ -165,12 +162,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 var blog = function blog(props) {
     return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         'div',
-        { className: 'example', __source: {
+        { className: 'blog dark', __source: {
                 fileName: _jsxFileName,
                 lineNumber: 7
             }
         },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_BlogEntry__["a" /* default */], { entry: _this.props.stuff[2], __source: {
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_BlogEntry__["a" /* default */], { entry: props.stuff[2], __source: {
                 fileName: _jsxFileName,
                 lineNumber: 8
             }

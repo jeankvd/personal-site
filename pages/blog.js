@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch'
 
 const blog = (props) => {
     return(
-        <div className='example'>
+        <div className='blog dark'>
             <BlogEntry entry={props.stuff[2]}/>
         </div>  
     )
