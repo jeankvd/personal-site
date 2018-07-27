@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import Link from 'next/link'
 
 class Navbar extends Component {
     render() {
         return(
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>About Me</li>
-                    <li>Contact Me</li>
+                    <Link href="/"><li><a>Home</a></li></Link>
+                    <Link href="/blog"><li><a>Blog</a></li></Link>
+                    <Link href="/about"><li><a>About Me</a></li></Link>
+                    <Link href="/contact"><li><a>Contact Me</a></li></Link>
                 </ul>
             </nav>
         )

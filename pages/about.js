@@ -5,10 +5,8 @@ export default () => {
   return(
   <div>
     <Navbar />
-    <br/>
-    <br/>
-    <br/>
-    <h1 >Home</h1>
+    <br/><br/><br/>
+    <h1>About</h1>
   </div>
   )
 }
