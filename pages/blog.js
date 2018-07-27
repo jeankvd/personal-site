@@ -4,11 +4,14 @@ import fetch from 'isomorphic-unfetch'
 
 import BlogEntry from '../components/BlogEntry';
 import Sidebar from '../components/Sidebar'
+import Navbar from '../components/header/Navbar'
+
 
 const blog = (props) => {
     return(
         <div className='blog dark'>
-            <div className="blog-container">
+            <Navbar />
+            <div className="blog-container layout">
                 <Sidebar />
                 <BlogEntry entry={props.stuff[2]}/>
             </div>

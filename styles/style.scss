@@ -10,12 +10,25 @@ body {
 
 /* Navbar */
 
-#navbar {
+nav {
   background-color: #397fda;
+  padding: 2px;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
+  }
 }
 
 
 /* Layout */
+
+.layout {
+  padding-top: 50px;
+}
 
 .blog-container {
   display: grid;
