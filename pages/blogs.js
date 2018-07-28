@@ -9,7 +9,7 @@ import Navbar from '../components/header/Navbar'
 
 const blogs = (props) => {
     return(
-        <div className='blog dark'>
+        <div className='blog'>
             <Navbar />
             <div className="blog-container layout">
                 <Sidebar />

@@ -16,6 +16,7 @@ nav {
   text-align: right;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 
   li {
     display: inline-block;
@@ -38,6 +39,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+
+
 
 /* Blog Specific */
 
@@ -76,9 +79,80 @@ nav {
 /* Blog Square */
 
 .blog-square {
-  border: solid 1px white;
+  border: solid 1px #525252;
   margin-bottom: 20px;
   padding: 20px;
+}
+
+/* About */
+
+.about-image {
+  background-image: url("https://blog.321theagency.com/wp-content/uploads/2018/07/IMG_1768_edit.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.about-name{
+  position: sticky;
+  width: 50px;
+  height: 50px;
+  width: 50%;
+  padding-top: 50px;
+  top: 0vh;
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.about-bio {
+  width: 50%;
+  top: 50%;
+  right: 0;
+  margin: 50px;
+}
+
+/* About background */
+
+.about-bg {
+  position: relative;
+}
+
+.about-circle {
+  height: 200px;
+  width: 200px;
+  background-color: #397fda;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  animation: circleMove 20s infinite;
+}
+
+@keyframes circleMove {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 200px;
+  }
+
+  100% {
+    top: 0;
+  }
+
 }
 
 /* Dark mode */
