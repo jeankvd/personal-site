@@ -221,7 +221,7 @@ $colorMoon: #fff;
   margin: 10px 0 20px;
 }
 
-.blog a {
+.blog-entry a {
   text-decoration: none;
   color: inherit;
   border-bottom: solid 3px #397fda;
@@ -231,14 +231,13 @@ $colorMoon: #fff;
   transition: all .4s ease-in-out;
 }
 
-.blog a:hover {
+.blog-entry a:hover {
   background-color: rgba(57,127,218, .7);
 }
 
 .blog h1 {
   font-size: 24px;
   font-weight: 400;
-  margin-top: 45px;
   margin-bottom: 10px;
 }
 
@@ -248,6 +247,22 @@ $colorMoon: #fff;
   border: solid 1px #525252;
   margin-bottom: 20px;
   padding: 20px;
+  max-width: 600px;
+
+  h2 {
+
+  }
+
+  img {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+
+  .read-more {
+    color: red;
+  }
 }
 
 /* About */

@@ -26,9 +26,10 @@ const blogs = (props) => {
 } 
 
 blogs.getInitialProps = async function({ req, res, match }) {
-    const request = await fetch('http://demo.wp-api.org/wp-json/wp/v2/posts/');
+    const request = await fetch('http://ssrblog.dev/wp-json/wp/v2/posts/');
     const data = await request.json();
     return { data };
   }
+
 
 export default blogs

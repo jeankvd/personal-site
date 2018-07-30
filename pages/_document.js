@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
             rel='stylesheet'
             href='/_next/static/style.css'
           />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"/>
           <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js" > </script>
         </Head>
         <body>
