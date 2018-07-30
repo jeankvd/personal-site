@@ -41,6 +41,172 @@ nav {
 }
 
 
+/* Home */
+.home-title {
+  text-align: center;
+  position: absolute;
+  top: 250px;
+  transform: translateY(-50%);
+  width: 100%;
+
+  span {
+    color: #236DBA;
+  }
+}
+
+.home {
+  background-color: #222;
+  color: white;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  background-color: #222;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .intro {
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+
+/* Hero Wolf */
+$colorDefault: #002142;
+$frameSize: 500px;
+$velocityRotateStar: 200;
+$starSize: 3px;
+$dimension: 0;
+$colorMoon: #fff;
+
+.frame {
+  position: relative!important;
+  overflow: hidden;
+  &:hover .moon {
+		animation: moonBlink 3s infinite ease;
+  }
+  .wolf {
+    background-image: url(https://raw.githubusercontent.com/interaminense/repository-codepen/master/wolf/imgs/wolf.png);
+    width: 500px;
+    height: 209px;
+    position: absolute;
+    bottom: 0;
+    background-position: -49px;
+  }
+  .moon {
+    border-radius: 50%;
+    background-color: $colorMoon;
+    box-shadow: 
+      0 0 0 25px rgba($colorMoon, .1), 
+      0 0 0 50px rgba($colorMoon, .05), 
+      0 0 0 75px rgba($colorMoon, .01),
+      0 0 200px rgba($colorMoon, .5);
+      transition: all 3s ease-in-out;
+    &:after {
+      // background-image: url(https://raw.githubusercontent.com/interaminense/repository-codepen/master/wolf/imgs/bgMoon.png);
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      background-size: 100%;
+      opacity: .3;
+      box-shadow: 0 0 60px inset;
+    }
+  }
+  .constellation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .star {
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+    }
+    &.stars-a {
+      animation: rotate360 $velocityRotateStar + s linear infinite;
+    }
+    &.stars-b {
+      animation: rotate360 $velocityRotateStar / 2 + s linear infinite;
+    }
+  }
+}
+
+@mixin animationConstellation() {
+  @for $i from 1 through 26 {
+    .star:nth-child(#{$i}) { 
+      top: random($frameSize) + px;
+      left: random($frameSize) + px;
+      $sizeStar: random($starSize) + px;
+      width: $sizeStar;
+      height: $sizeStar;
+      animation: blink $i * .1s  infinite;
+    }
+  }
+}
+  
+@mixin position($width, $height) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: $width;
+  height: $height;
+  margin: auto;
+}
+
+.frame { @include position($frameSize, $frameSize); }
+.moon { @include position(200px, 200px); }
+
+.stars-a { @include animationConstellation(); }
+.stars-b { @include animationConstellation(); }
+
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+  0% { box-shadow: 0; }
+  50% { box-shadow: 0 0 10px rgba(255, 255, 255, .7); }
+  100% { box-shadow: 0; }
+}
+
+@keyframes moonBlink {
+	0% {
+		box-shadow: 
+      0 0 0 25px rgba($colorMoon, .1), 
+      0 0 0 50px rgba($colorMoon, .05), 
+      0 0 0 75px rgba($colorMoon, .01),
+      0 0 200px rgba($colorMoon, .5);
+	}
+	50% {
+		box-shadow: 
+      0 0 0 15px rgba($colorMoon, .1), 
+      0 0 0 40px rgba($colorMoon, .05), 
+      0 0 0 50px rgba($colorMoon, .01),
+      0 0 100px rgba($colorMoon, .5);
+	}
+	100% {
+		box-shadow: 
+      0 0 0 25px rgba($colorMoon, .1), 
+      0 0 0 50px rgba($colorMoon, .05), 
+      0 0 0 75px rgba($colorMoon, .01),
+      0 0 200px rgba($colorMoon, .5);
+	}
+}
+
+.wolf {
+  filter: brightness(.6);
+}
 
 /* Blog Specific */
 
@@ -113,6 +279,10 @@ nav {
   text-align: center;
 
   h1 {
+    color: #000;
+  }
+
+  h1 {
     margin: 0;
   }
 }
@@ -131,6 +301,7 @@ nav {
 }
 
 .about-circle {
+  
   height: 200px;
   width: 200px;
   background-color: #397fda;

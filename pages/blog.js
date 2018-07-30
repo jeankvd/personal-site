@@ -1,10 +1,10 @@
-import '../styles/style.scss'
+import '../styles/style.scss';
 
-import fetch from 'isomorphic-unfetch'
+import fetch from 'isomorphic-unfetch';
 
 import BlogEntry from '../components/BlogEntry';
-import Sidebar from '../components/Sidebar'
-import Navbar from '../components/header/Navbar'
+import Sidebar from '../components/Sidebar';
+import Navbar from '../components/header/Navbar';
 
 
 const blog = (props) => {

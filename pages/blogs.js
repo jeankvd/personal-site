@@ -16,7 +16,7 @@ const blogs = (props) => {
                 <div>
                 { 
                     props.data.map( 
-                        blog => <BlogSquare blog={blog} />
+                        blog => <BlogSquare blog={blog} key={blog.id} />
                     )
                 }
                 </div>

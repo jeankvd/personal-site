@@ -1,14 +1,16 @@
 import '../styles/style.scss'
 import Navbar from '../components/header/Navbar'
+import Hero from '../components/home/Hero'
 
 export default () => {
   return(
-  <div>
+  <div className="">
     <Navbar />
-    <br/>
-    <br/>
-    <br/>
-    <h1 >Home</h1>
+    <div className="main home">
+      <div className="hero">
+        <Hero />
+      </div>
+    </div>
   </div>
   )
 }
