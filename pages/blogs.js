@@ -11,9 +11,9 @@ const blogs = (props) => {
     return(
         <div className='blog'>
             <Navbar />
-            <div className="blog-container layout">
+            <div className="blog-container layout main">
                 <Sidebar />
-                <div>
+                <div className="blogs">
                 { 
                     props.data.map( 
                         blog => <BlogSquare blog={blog} key={blog.id} />

@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link'
+
 
 function createMarkup() {
 
@@ -15,7 +17,12 @@ const BlogSquare = (props) => {
                 }}
             >
             </p>
-            <a href="" className="read-more">Read More -></a>
+            <Link 
+                href={"/post?id=" + props.blog.id }
+                as={`/post/${props.blog.slug}`}
+            >
+                <a className="read-more">Read More -></a>
+            </Link>
         </div>
     )
 }

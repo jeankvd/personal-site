@@ -12,10 +12,10 @@ const Hero = () => {
         <div className="hero">
             <div className="frame">
                 <div className="constellation stars-a">
-                    {starDivs.map((star) => <div className="star"></div> )}
+                    {starDivs.map((star, index) => <div className="star" key={index}></div> )}
                 </div>
                 <div className="constellation stars-b">
-                    {starDivs.map((star) => <div className="star"></div> )}
+                    {starDivs.map((star, index) => <div className="star" key={index}></div> )}
                 </div>
                 <div class="moon"></div>
                 <div class="wolf"></div>

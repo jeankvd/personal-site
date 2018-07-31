@@ -32,7 +32,7 @@ nav {
 /* Layout */
 
 .layout, .main {
-  padding-top: 50px;
+  padding-top: 54px;
 }
 
 .blog-container {
@@ -208,11 +208,7 @@ $colorMoon: #fff;
   filter: brightness(.6);
 }
 
-/* Blog Specific */
-
-.blog {
-  // margin: 0 40px;
-}
+/* Blog entry */
 
 
 .blog p {
@@ -241,7 +237,15 @@ $colorMoon: #fff;
   margin-bottom: 10px;
 }
 
-/* Blog Square */
+/* Blogs page */
+
+.more-link {
+  display: none;
+}
+
+.blogs {
+  margin-top: 10px;
+}
 
 .blog-square {
   border: solid 1px #525252;
@@ -261,7 +265,10 @@ $colorMoon: #fff;
   }
 
   .read-more {
-    color: red;
+    color: white;
+    background-color: #397fda;
+    padding: 10px 20px;
+    text-decoration: none;
   }
 }
 

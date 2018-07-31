@@ -7,22 +7,22 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/header/Navbar';
 
 
-const blog = (props) => {
+const post = (props) => {
     return(
         <div className='blog dark'>
             <Navbar />
             <div className="blog-container layout">
                 <Sidebar />
-                <BlogEntry entry={props.stuff[2]}/>
+                <BlogEntry entry={props.data}/>
             </div>
         </div>  
     )
 } 
 
-blog.getInitialProps = async function({ req, res, match }) {
-    const hn = await fetch('http://demo.wp-api.org/wp-json/wp/v2/posts/');
-    const stuff = await hn.json();
-    return { stuff };
+post.getInitialProps = async function({ query }) {
+    const request = await fetch(`http://ssrblog.dev/wp-json/wp/v2/posts/${query.id}`);
+    const data = await request.json();
+    return { data };
   }
 
-export default blog
+export default post
