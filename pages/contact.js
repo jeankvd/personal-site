@@ -1,12 +1,11 @@
 import '../styles/style.scss'
-import Navbar from '../components/header/Navbar'
+import Page from '../components/wrapper/page'
 
 export default () => {
   return(
-  <div>
-    <Navbar />
+  <Page>
     <br/><br/><br/>
     <h1>Contact</h1>
-  </div>
+  </Page>
   )
 }

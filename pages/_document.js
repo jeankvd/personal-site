@@ -5,6 +5,8 @@ You could include it into the page using either next/head or a custom _document.
 */
 
 import Document, { Head, Main, NextScript } from 'next/document'
+import Footer from '../components/footer/Footer'
+import Navbar from '../components/header/Navbar'
 
 export default class MyDocument extends Document {
   render () {

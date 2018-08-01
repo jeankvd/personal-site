@@ -1,10 +1,9 @@
 import '../styles/style.scss'
-import Navbar from '../components/header/Navbar'
+import Page from '../components/wrapper/page'
 
 export default () => {
   return(
-  <div>
-    <Navbar />
+  <Page>
     <div className="layout">
       <div className="about-page">
         <div className="about-image">
@@ -56,6 +55,6 @@ export default () => {
         </div>
       </div>
     </div>
-  </div>
+  </Page>
   )
 }

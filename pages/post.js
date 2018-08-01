@@ -4,18 +4,16 @@ import fetch from 'isomorphic-unfetch';
 
 import BlogEntry from '../components/BlogEntry';
 import Sidebar from '../components/Sidebar';
-import Navbar from '../components/header/Navbar';
-
+import Page from '../components/wrapper/page'
 
 const post = (props) => {
     return(
-        <div className='blog dark'>
-            <Navbar />
+        <Page className='blog dark'>
             <div className="blog-container layout">
                 <Sidebar />
                 <BlogEntry entry={props.data}/>
             </div>
-        </div>  
+        </Page>  
     )
 } 
 

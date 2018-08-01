@@ -4,13 +4,12 @@ import fetch from 'isomorphic-unfetch'
 
 import BlogSquare from '../components/blog/BlogSquare'
 import Sidebar from '../components/Sidebar'
-import Navbar from '../components/header/Navbar'
+import Page from '../components/wrapper/page'
 
 
 const blogs = (props) => {
     return(
-        <div className='blog'>
-            <Navbar />
+        <Page className='blog'>
             <div className="blog-container layout main">
                 <Sidebar />
                 <div className="blogs">
@@ -21,7 +20,7 @@ const blogs = (props) => {
                 }
                 </div>
             </div>
-        </div>  
+        </Page>  
     )
 } 
 

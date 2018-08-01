@@ -17,8 +17,8 @@ const Hero = () => {
                 <div className="constellation stars-b">
                     {starDivs.map((star, index) => <div className="star" key={index}></div> )}
                 </div>
-                <div class="moon"></div>
-                <div class="wolf"></div>
+                <div className="moon"></div>
+                <div className="wolf"></div>
             </div>
             <div className="intro">
                 <h1><span>Jean Diaz</span></h1>
