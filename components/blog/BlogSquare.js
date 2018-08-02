@@ -10,7 +10,7 @@ const BlogSquare = (props) => {
     return(
         <div className="blog-square">
             <h2>{props.blog.title.rendered}</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrB6FZOrvD6S5qnkZRg4C3iiUVQct773T-DF76bCOnCEuy-ywnHQ" alt=""/>
+            <img src={props.blog["_embedded"]["wp:featuredmedia"][0]["source_url"]} alt=""/>
             <p 
                 dangerouslySetInnerHTML={{ 
                     __html : props.blog.excerpt.rendered 
@@ -23,6 +23,10 @@ const BlogSquare = (props) => {
             >
                 <a className="read-more">Read More -></a>
             </Link>
+            <div className="bottom-separator">
+                <div className="separator-circle"></div>
+                <hr/>
+            </div>
         </div>
     )
 }

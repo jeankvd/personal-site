@@ -25,7 +25,7 @@ const blogs = (props) => {
 } 
 
 blogs.getInitialProps = async function({ req, res, match }) {
-    const request = await fetch('http://ssrblog.dev/wp-json/wp/v2/posts/');
+    const request = await fetch('http://ssrblog.dev/wp-json/wp/v2/posts/?_embed');
     const data = await request.json();
     return { data };
   }
