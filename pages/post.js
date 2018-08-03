@@ -10,7 +10,6 @@ const post = (props) => {
     return(
         <Page className='blog dark'>
             <div className="blog-container layout">
-                <Sidebar />
                 <BlogEntry entry={props.data}/>
             </div>
         </Page>  

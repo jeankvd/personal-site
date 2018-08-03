@@ -11,14 +11,11 @@ const blogs = (props) => {
     return(
         <Page className='blog'>
             <div className="blog-container layout main">
-                <Sidebar />
-                <div className="blogs">
                 { 
                     props.data.map( 
                         blog => <BlogSquare blog={blog} key={blog.id} />
                     )
                 }
-                </div>
             </div>
         </Page>  
     )
