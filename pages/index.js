@@ -9,6 +9,11 @@ export default () => {
       <div className="hero">
         <Hero />
       </div>
+      <div className="content">
+      <section className="about-me">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, eveniet illum? Laboriosam omnis dicta assumenda quod quo debitis, quaerat officia voluptatem sed ipsa voluptatibus in deserunt itaque et, adipisci iusto.
+      </section>
+      </div>
     </div>
   </Page>
   )

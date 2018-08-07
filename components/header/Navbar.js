@@ -8,7 +8,6 @@ class Navbar extends Component {
                 <Link href="/"><span>Home</span></Link>
                 <Link href="/blogs"><span>Blogs</span></Link>
                 <Link href="/about"><span>About Me</span></Link>
-                <Link href="/contact"><span>Contact Me</span></Link>
             </nav>
         )
     }

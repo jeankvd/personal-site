@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () =>{
     return(
-        <div>
+        <footer>
             <span>2018&copy; Jean Villalobos</span>
-        </div>
+        </footer>
     )
 }
 

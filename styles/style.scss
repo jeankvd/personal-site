@@ -13,6 +13,7 @@ body {
 
 nav {
   background-color: #397fda;
+  color: white;
   padding: 2px;
   text-align: right;
   position: fixed;
@@ -56,20 +57,38 @@ nav {
   color: white;
 }
 
-/* Hero */
+.about-me {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero  */
 
 .hero {
   display: flex;
   flex-direction: row;
   background-color: #222;
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  justify-content: space-evenly;
 
   .intro {
     display: inline-block;
     text-align: center;
     align-self: center;
   }
+}
+
+.main-frame {
+  margin: inherit!important;
+}
+
+.divider {
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to top, transparent 10%, 
+  rgba(255, 255,255, 0.5), transparent 90%);
 }
 
 
@@ -402,6 +421,10 @@ $colorMoon: #fff;
   top: 50%;
   right: 0;
   margin: 50px;
+
+  p {
+    line-height: 1.8;
+  }
 }
 
 /* About background */
@@ -434,6 +457,14 @@ $colorMoon: #fff;
     top: 0;
   }
 
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Dark mode */
