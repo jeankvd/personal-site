@@ -9,23 +9,42 @@ var starDivs = Array.from('x'.repeat(STARS))
 const Hero = () => {
 
     return(
-        <div className="hero">
-            <div className="frame main-frame">
-                <div className="constellation stars-a">
-                    {starDivs.map((star, index) => <div className="star" key={index}></div> )}
-                </div>
-                <div className="constellation stars-b">
-                    {starDivs.map((star, index) => <div className="star" key={index}></div> )}
-                </div>
-                <div className="moon"></div>
-                <div className="wolf"></div>
-            </div>
-            <div className="divider"></div>
-            <div className="intro">
-                <h1><span>Jean Diaz</span></h1>
-                <h1> <strike>Wolf</strike> Web Developer</h1>
-            </div>
+        <div className="hero" id="hero">
+            <div className="view view-after" id="viewAfter">
+      <div className="wrapper-after">
+        <div className="logo">
+          <h2> <img src="http://res.cloudinary.com/dub9ykyuq/image/upload/v1517696936/wolfsvg_hxf2jz.png" alt="" /> Jean Villalobos</h2>
         </div>
+        <div className="img-wrapper">
+          <img src="http://res.cloudinary.com/dub9ykyuq/image/upload/v1517697588/Untitled_wcfedl.png" alt="" />
+        </div>
+        <div className="img-shadow"></div>
+        <div className="text-after">
+          <h2>Web Developer combining Front-End Development, WordPress, and curiosity</h2>				<h2>... to create engaging user interfaces and experiences</h2>
+        </div>
+        <div className="arrow">
+            <i className="fa fa-angle-down" aria-hidden="true"></i>
+        </div> 
+      </div>
+    </div>
+    <div className="view view-before" id="viewBefore">
+      <div className="wrapper-before">
+        <div className="logo">
+          <h2> <img src="http://res.cloudinary.com/dub9ykyuq/image/upload/v1517696936/wolfsvg_hxf2jz.png" alt="" /> Jean Villalobos</h2>
+        </div>
+        <div className="img-wrapper">
+          <img src="http://res.cloudinary.com/dub9ykyuq/image/upload/v1517696936/wolfsvg_hxf2jz.png" alt="" />
+        </div>
+        <div className="img-shadow"></div>
+        <div className="text-before">
+          <h2>Web Developer combining Front-End Development, WordPress, and curiosity</h2>
+          <h2>... to create engaging user interfaces and experiences</h2>
+        </div>
+        <div className="arrow">
+        </div>
+      </div>
+    </div>
+    </div>
     )
 }
 
