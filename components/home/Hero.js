@@ -1,5 +1,4 @@
 import React from 'react';
-import Stars from './Stars'
 
 const star = () => <div className="star"></div>;
 

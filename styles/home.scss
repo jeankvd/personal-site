@@ -1,0 +1,29 @@
+.home {
+    color: black;
+}
+
+.about-me {
+    background-color: #eee;
+    color: #737373;
+    padding: 48px;
+    font-weight: 500;
+}
+
+/* Stack */
+
+.tech-stack {
+    text-align: center;
+}
+
+.stack {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.individual-stack {
+    text-align: center;
+    max-width: 30%;
+}
