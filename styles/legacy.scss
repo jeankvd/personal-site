@@ -1,0 +1,817 @@
+.landing {
+}
+
+/*General*/
+
+body {
+  margin: 0;
+  color: #2a3a3f;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1:not(.intro) {
+  font-size: 2.8em;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 0; /*Maybe*/
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.pill-btn {
+  margin-bottom: 50px;
+}
+
+.lead {
+  margin-bottom: 0;
+}
+
+/* Hero */
+
+#hero {
+  height: 100vh;
+}
+
+.logo {
+  padding: 0 15px;
+  margin: 0;
+  width: 100%;
+  color: white;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.view-before .logo {
+  color: black;
+}
+
+.logo img {
+  width: 30px;
+  vertical-align: bottom;
+}
+
+.view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.view-before {
+  z-index: 100;
+}
+
+.view-after {
+  background-color: #397fda;
+  z-index: 200;
+  transition: width 1s ease-in-out;
+}
+
+.wrapper-after,
+.wrapper-before {
+  /* Make Wrapper take the whole screen for relative positioning of wrapper */
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+}
+
+.img-wrapper {
+  /*  Fixed width for consistency on resize & movement  */
+
+  position: relative;
+  top: 50%;
+  transform: translate(-4px, -50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 32vh;
+}
+
+/* Text */
+.text-after,
+.text-before {
+  overflow: hidden;
+}
+
+.text-after h2,
+.text-before h2 {
+  position: absolute;
+  width: 30%;
+  padding: 0 2%;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.text-after h2:nth-child(1),
+.text-before h2:nth-child(1) {
+  left: 0;
+}
+
+.text-after h2:nth-child(2),
+.text-before h2:nth-child(2) {
+  right: 0;
+}
+
+.text-after {
+  color: white;
+}
+
+.text-before {
+  color: black;
+}
+
+/* Exported to PNG */
+
+.img-wrapper img {
+  width: 100%;
+  animation: float 3s infinite;
+}
+
+.img-shadow {
+  background: url(https://static.enginethemes.com/main/img/shadow.png) no-repeat
+    center center;
+  width: 250px;
+  height: 24px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 18%;
+  animation: shadowMagnify 3s infinite;
+}
+
+/* Menu */
+
+.menu {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+}
+
+.menu li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.menu a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #2a3a3f;
+}
+
+/* Animations */
+
+@keyframes shadowMagnify {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0%);
+  }
+  50% {
+    transform: translatey(8%);
+  }
+  100% {
+    transform: translatey(0%);
+  }
+}
+
+/* Particles */
+
+#viewBefore div[data-name="mojs-shape"] {
+  position: absolute;
+  z-index: -10;
+}
+
+#viewAfter div[data-name="mojs-shape"] {
+  position: absolute;
+  z-index: -10;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 320px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*Header*/
+
+  .text-after,
+  .text-before {
+    display: none;
+  }
+
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/*Header*/
+
+#header,
+#container h1 {
+  line-height: 1.3;
+  margin: 0;
+}
+
+#header {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+    90deg,
+    rgba(49, 61, 65, 0.6),
+    rgba(49, 61, 65, 0.6)
+  );
+  color: #fff;
+  height: 100vh;
+}
+
+#header #container {
+  text-align: center;
+  padding: 0 25%;
+  padding-top: 40vh;
+}
+
+#container .btn {
+  display: inline-block;
+  margin-top: 14%;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: solid 3px #397fda;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+#container .btn:hover {
+  padding: 10px 55px;
+  background-color: #397fda;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/*See More link*/
+#see-more {
+  position: absolute; /*Absolute positioning for consistent -*/
+  bottom: 0; /*-Spacing, even with console opened*/
+  right: 0;
+  left: 0;
+  font-size: 1.5em;
+}
+
+#see-more a {
+  color: #bbb;
+}
+
+#see-more a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#see-more i {
+  display: block;
+  margin-top: 12px;
+}
+
+.element {
+  /*Limit space available to .element*/
+  display: block; /*to prevent spacing inconsistencies*/
+  height: 10px;
+}
+
+/*About*/
+
+#about img {
+  border-radius: 100%;
+  border: 12px outset #88b4ed;
+}
+
+#about p {
+  margin: 3%;
+}
+#about .container {
+  max-width: 80%;
+}
+
+/*Skills Section*/
+
+.skills {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin: auto;
+}
+
+.skills h1,
+.skills p,
+.skills h2 {
+  text-align: center;
+  margin-left: auto;
+}
+
+.skills h2 {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.skills .lead {
+  margin-bottom: 10%;
+}
+
+.skills-row {
+  margin-top: 6%;
+}
+
+.skills-block p {
+  color: #999;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+/*On skills-block:hover, rotate icons*/
+
+.skills-block:hover i,
+.watched {
+  transition: 0.9s ease-in-out;
+  transform: rotate(360deg);
+}
+
+/*Icons*/
+
+.expert-icons {
+  display: block;
+  text-align: center;
+  color: #397fda;
+  font-size: 6rem;
+  margin-bottom: 10%;
+}
+
+/*Work Section*/
+
+.tabslist ul {
+  display: inline-block;
+  border-bottom: none;
+}
+
+.tabslist a {
+  border: none !important;
+  font-weight: bold;
+}
+
+.tabslist .active a {
+  background-color: #397fda !important;
+  color: white !important;
+  border-radius: 0;
+  margin-right: 0;
+}
+
+.tabslist a:hover {
+  border: none;
+}
+
+.tabslist {
+  text-align: center;
+}
+
+.work h1,
+.work .lead {
+  text-align: center;
+}
+
+.work a:first-child {
+  color: #397fda;
+}
+
+.work h1,
+.other h1 {
+  margin-top: 8%;
+}
+
+.work p,
+.other .lead {
+  margin-bottom: 3%;
+}
+
+.work {
+  background-color: #eee;
+}
+
+/*Projects text*/
+
+.work h2 {
+  margin-bottom: 2%;
+}
+
+.project p,
+#about p {
+  color: #737373;
+  margin-bottom: 11%;
+  line-height: 1.5;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+#about p {
+  font-size: 1.3em;
+  margin-bottom: 3%;
+}
+
+.project p,
+.tags {
+  text-align: left;
+}
+
+.tags span {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  background-color: #397fda;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-bottom: 7%;
+  color: white;
+}
+
+/*Project Image*/
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.project .img-fluid {
+  border-radius: 10px;
+}
+
+/*Project spacing & Border*/
+
+.project {
+  margin: 5% inherit;
+  padding: 8% 0 8% 0;
+  border-bottom: solid 1px #d6e1e5;
+}
+
+/*Projects button*/
+
+.project-btn {
+  border-radius: 50px;
+  padding: 3% 6%;
+  border: 3px solid #397fda;
+  font-weight: bold;
+  color: #222;
+  transition: all 0.4s ease-in-out;
+}
+
+.project-btn:hover {
+  background-color: #397fda;
+  padding: 3% 8%;
+  transition: all 0.4s ease-in-out;
+}
+
+/*Skills List*/
+#skills-list {
+  padding: 0;
+  padding-top: 4%;
+}
+
+#skills-list li {
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  color: #397fda;
+  font-size: 1.5em;
+  border: solid 2px #397fda;
+  border-radius: 15px;
+}
+
+/*Link other projects*/
+.other {
+  text-align: center;
+}
+
+.other-btn {
+  display: inline-block;
+  border-radius: 50px;
+  border: 3px solid #397fda;
+  margin: 5%;
+  padding: 1% 5%;
+  color: #2a3a3f;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.other-btn:hover {
+  padding: 1% 6%;
+  background-color: #397fda;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/*Work Together Section*/
+
+.together {
+  background-color: #397fda;
+  color: #fff;
+  padding: 5% 20%;
+  text-align: center;
+}
+
+.together p {
+  font-size: 1.5em;
+}
+
+.together .other-btn {
+  border-color: white;
+  color: white;
+}
+
+.together .other-btn:hover {
+  border-color: white;
+  color: #397fda;
+  background-color: white;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  padding: 2%;
+  margin: 0;
+}
+
+/*Contact*/
+
+.contact svg {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: -15px;
+}
+
+/*EMail & Phone SVGS and Line*/
+
+.email,
+.phone {
+  fill: grey;
+}
+
+.email p:hover {
+  color: #fd1;
+  fill: orange;
+  transition: all 0.4s ease-in-out;
+}
+
+.phone p:hover {
+  color: #fd1;
+  fill: #397fda;
+  transition: all 0.4s ease-in-out;
+}
+
+/*Social PNG*/
+
+.social-png {
+  width: 50px;
+  opacity: 1;
+  margin-top: -5px;
+}
+
+.social-png:hover {
+  opacity: 0.5;
+}
+/*Copyright line*/
+
+#copy {
+  margin-top: 3%;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 320px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*General*/
+
+  body {
+    font-size: 1.6em;
+    width: 100%;
+  }
+
+  /*Header*/
+
+  .text-after,
+  .text-before {
+    display: none;
+  }
+
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  #header {
+    height: 100%;
+  }
+
+  #header #container {
+    padding: 55% 1%;
+  }
+
+  #container h1 {
+    font-size: 1.8em;
+  }
+
+  /*Experience*/
+  .skills-block {
+    margin: 8% 5%;
+  }
+
+  .skills-block i {
+    margin-bottom: 3%;
+  }
+
+  .skills .lead {
+    margin-bottom: 0;
+  }
+
+  /*about*/
+
+  #about p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.1em;
+    margin-top: 5%;
+  }
+
+  #about .container,
+  #about .col-sm-9 {
+    padding: 0;
+  }
+
+  /*Work*/
+
+  .project div {
+    margin-bottom: 5%;
+  }
+
+  .tags span {
+    margin-bottom: 0;
+  }
+
+  /*Skills-list*/
+
+  #skills-list li {
+    margin: 2px;
+    text-align: left;
+    font-size: 1.3em;
+  }
+
+  .other {
+    padding: 0;
+  }
+
+  #skills-list br {
+    display: none;
+  }
+
+  /*Work Together*/
+
+  .together {
+    padding: 8% 5%;
+    font-size: 0.8em;
+  }
+  /*Footer*/
+
+  .col-sm-4 {
+    margin-bottom: 10%;
+  }
+
+  .col-sm-4 h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .svg-lead {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*General*/
+
+  .lead {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  /*Header*/
+
+  #header #container {
+    padding: 0 23%;
+    padding-top: 30vh;
+  }
+
+  .intro {
+    font-size: 3.2em;
+    font-weight: 700;
+  }
+
+  /*Experience*/
+
+  .skills {
+    padding: 3% 0;
+  }
+
+  .skills-block p {
+    padding: 0 5px;
+  }
+
+  .skills .lead {
+    margin-bottom: 3%;
+  }
+
+  .skills-block .fa {
+    margin-bottom: 4%;
+  }
+
+  .skills-block h2 {
+    margin-bottom: 4%;
+  }
+
+  /*Work*/
+
+  .project h2 {
+    font-weight: bold;
+  }
+
+  .project .col-sm-6 {
+    padding: 0 5%;
+  }
+
+  .project p {
+    font-size: 1.3em;
+  }
+
+  .project {
+    padding: 5% 3%;
+  }
+
+  /*Skills List*/
+
+  .other h1 {
+    margin-top: 5%;
+  }
+
+  #skills-list {
+    padding-top: 0;
+  }
+
+  /*Work Together*/
+
+  .together {
+    padding: 3% 25%;
+  }
+
+  .together h1 {
+    margin-bottom: 5%;
+  }
+
+  .together .pill-btn {
+    margin-bottom: 0;
+  }
+
+  /*Footer*/
+
+  #copy {
+    margin-top: 0;
+  }
+}
