@@ -5,6 +5,15 @@ import Stack from "../components/home/Stack";
 import Work from "../components/home/Work";
 import Skills from "../components/home/Skills";
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRobot } from '@fortawesome/free-solid-svg-icons'
+import { faReact, faLaravel } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faReact);
+library.add(faLaravel);
+library.add(faRobot);
+
 export default () => {
   return (
     <Page>

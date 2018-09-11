@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Stack = () => {
   return (
     <section className="tech-stack">
@@ -5,7 +7,7 @@ const Stack = () => {
       <p>Front-End meets Back-End</p>
       <div className="stack">
         <div className="individual-stack">
-          <img src="" alt="" />
+          <FontAwesomeIcon icon={["fab", "react"]} />
           <h3>Front End Development</h3>
           <p>
             From PSD to interactive sites, I have experience with a wide array
@@ -14,7 +16,7 @@ const Stack = () => {
           </p>
         </div>
         <div className="individual-stack">
-          <img src="" alt="" />
+          <FontAwesomeIcon icon={["fab", "laravel"]} />
           <h3>Front End Development</h3>
           <p>
             From PSD to interactive sites, I have experience with a wide array
@@ -23,7 +25,7 @@ const Stack = () => {
           </p>
         </div>
         <div className="individual-stack">
-          <img src="" alt="" />
+        <FontAwesomeIcon icon="robot" />
           <h3>Front End Development</h3>
           <p>
             From PSD to interactive sites, I have experience with a wide array
