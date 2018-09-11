@@ -2,43 +2,43 @@
 }
 
 .about-me {
-    background-color: #eee;
-    color: #737373;
-    padding: 48px;
-    font-weight: 500;
+  background-color: #eee;
+  color: #737373;
+  padding: 48px;
+  font-weight: 500;
 }
 
 /* Stack */
 
 .tech-stack {
-    text-align: center;
+  text-align: center;
 }
 
 .stack {
-    display: flex;
-    flex-direction: row;
-    max-width: 1000px;
-    margin: 0 auto;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
 
-    h3 {
-        margin: 10px;
-        font-size: 30px;
-        font-weight: bold;
-        color: #2A3A3F;
-    }
+  h3 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2a3a3f;
+  }
 }
 
 h2 {
-    text-align: center;
-    margin-left: auto;
-    font-size: 2.8em;
-    font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  font-size: 2.8em;
+  font-weight: bold;
 }
 
 .individual-stack {
-    text-align: center;
-    max-width: 30%;
+  text-align: center;
+  max-width: 30%;
 }
 
 /* Work */
