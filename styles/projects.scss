@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 850px;
+
+    .col-sm-6 {
+        margin: 0 15px; 
+    }
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rearrange {
+    flex-direction: row-reverse;
+}

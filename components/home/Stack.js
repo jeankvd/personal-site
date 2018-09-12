@@ -4,7 +4,7 @@ const Stack = () => {
   return (
     <section className="tech-stack">
       <h2>My Experience</h2>
-      <p>Front-End meets Back-End</p>
+      <p className="lead">Front-End meets Back-End</p>
       <div className="stack">
         <div className="individual-stack">
           <FontAwesomeIcon icon={["fab", "react"]} />

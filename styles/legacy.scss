@@ -430,7 +430,7 @@ a:hover {
 .project p,
 #about p {
   color: #737373;
-  margin-bottom: 11%;
+  margin-bottom: 7%;
   line-height: 1.5;
   font-size: 1.1em;
   font-weight: 500;
@@ -452,14 +452,13 @@ a:hover {
   background-color: #397fda;
   border-radius: 15px;
   margin-right: 5px;
-  margin-bottom: 7%;
   color: white;
 }
 
 /*Project Image*/
 .img-fluid {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .project .img-fluid {
@@ -769,7 +768,7 @@ footer p {
 
   /*Work*/
 
-  .project h2 {
+  .project h3 {
     font-weight: bold;
   }
 
