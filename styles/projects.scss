@@ -28,3 +28,21 @@
 .rearrange {
     flex-direction: row-reverse;
 }
+
+.work {
+    ul {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    ul span {
+        cursor: pointer;
+    }
+}
