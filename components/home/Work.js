@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Showcase from './Projects/Showcase';
+import Three from './Projects/Three';
 
 class Work extends Component {
   constructor(props) {
@@ -27,7 +28,12 @@ class Work extends Component {
           <li><span id="showcase" onClick={this.handleClick}>Showcase</span></li>
           <li><span id="three" onClick={this.handleClick}>321</span></li>
         </ul>
-        <Showcase />
+        {
+          this.state.selected == "showcase" ? <Showcase /> : null
+        }
+        {
+          this.state.selected == "three" ? <Three /> : null
+        }        
       </div>
     );
   }

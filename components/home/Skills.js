@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="other container">
+    <div className="skills-container skills">
       <h1>Skills</h1>
       <p className="lead">All the technologies I have experience with</p>
       <ul id="skills-list">
@@ -25,7 +25,7 @@ const Skills = () => {
         <li>PSD to WordPress</li>
       </ul>
       <a href="https://github.com/jeankvd/" className="other-btn pill-btn">
-        See my other projects
+        See my Blog 
       </a>
     </div>
   );
