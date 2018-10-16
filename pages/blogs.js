@@ -7,7 +7,7 @@ import Sidebar from "../components/Sidebar";
 import Page from "../components/wrapper/page";
 
 const blogs = props => {
-  console.log(props)
+  console.log(props);
   return (
     <Page className="blog">
       <div className="blog-container layout main">
