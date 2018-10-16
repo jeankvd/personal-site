@@ -7,11 +7,12 @@ import Sidebar from "../components/Sidebar";
 import Page from "../components/wrapper/page";
 
 const blogs = props => {
+  console.log(props)
   return (
     <Page className="blog">
       <div className="blog-container layout main">
         {props.data.map(blog => (
-          <BlogSquare blog={blog} key={blog.id} />
+          <BlogSquare blog={blog} key={blog.id} id={blog.slug} />
         ))}
       </div>
     </Page>

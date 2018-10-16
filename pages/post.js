@@ -23,8 +23,6 @@ post.getInitialProps = async function({ query }) {
     `http://ssrblog.dev/wp-json/wp/v2/posts?slug=${query.id}`
   );
   const data = await request.json();
-  //   const request = await fetch("http://ssrblog.dev/wp-json/wp/v2/posts/?_embed");
-  // const data = await request.json();
   return { data };
 };
 

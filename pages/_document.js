@@ -13,7 +13,6 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <link rel="stylesheet" href="/_next/static/style.css" />
           <link
             href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500,600,700"
             rel="stylesheet"
@@ -22,19 +21,16 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
           />
-          <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js">
-            {" "}
-          </script>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.js"
-            defer="defer"
-          />
-          <script src="https://rawgit.com/jeankvd/jeankvd.github.io/master/js/app.js" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.js"
+          defer="defer"
+        />
+        <script src="https://rawgit.com/jeankvd/jeankvd.github.io/master/js/app.js" />
       </html>
     );
   }

@@ -1,4 +1,7 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-jest)
+Note to self
+remove_filter( 'the_excerpt', 'wpautop' );
+
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/jeankvd/personal-site)
 
 # Example app with next-sass
 
